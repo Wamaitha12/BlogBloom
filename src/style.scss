@@ -1,0 +1,400 @@
+$beige : #98419e;
+
+.app{
+    display: flexbox;
+    justify-content: center;
+    background-color: #ffffff;
+    .container{
+       width: 1340px;
+
+    .link{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    //LOGIN AND REGISTER
+.auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #6630e4;
+    
+    h1{
+        font-size: 60px; 
+        color: rgb(184, 22, 216);
+        margin-bottom: 2px;
+        margin-top: 2px;
+     }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 85px;
+        background-color: #281872; 
+        width: 200px;
+        gap: 20px;
+    }
+    button{
+        background-color: rgb(199, 16, 62);
+        color: #fff;
+        padding: 10px;
+        border-Radius:10px;
+        cursor: pointer;
+        transition: transform 2.2s ease-in-out;
+   }
+   button:hover{
+    transform: scale(1.1);
+   }
+    input{
+        border-Radius:10px;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+    span{
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 17px;
+     text-align: center;
+     color: #000000;
+    }
+    p{
+        font-size: 12px;
+        color: red;
+        text-align: center;
+  }
+
+}
+       //NAVBAR
+    .navbar{
+        .container{
+            margin-top: 3px;
+                padding: 5px;
+                background-color: rgb(230, 5, 117);;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 15px;
+        
+        .logo{
+            img{
+              width: 90px; 
+                }
+            }
+        .links{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+          h6{
+            font-size: 15px;
+            font-weight: 40;
+                }
+        span{
+          cursor: pointer;
+            }
+        .write{
+       
+        background-color: rgb(230, 5, 117);
+        width: 30px;
+        height: 30px;
+        border-radius: 10%;
+        display: float;
+        align-items: right;
+        justify-content: right;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         
+        
+        &:hover{
+            width: 35px;
+            height: 35px;
+            color: #000000;
+            background-color: rgb(230, 5, 117);
+            border: 2px solid rgb(180, 5, 122);
+            transition: 1.5s;
+        }
+    }
+    }
+  }
+}
+      //FOOTER
+      footer{
+        margin-top: 100px;
+        padding: 20px;
+        background-color: rgb(230, 5, 117);;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        img{
+            height: 50px;
+        }
+      }
+      //HOME
+.home{
+    .posts{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    .post{
+        display: flex;
+        gap: 100px;
+
+        &:nth-child(2n+1){
+            flex-direction: row-reverse;
+        }
+    }
+    .img{
+       flex: 2;
+       position: relative;
+
+       &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(230, 5, 117);;
+        position: absolute;
+        top: 5px;
+        left: -10px;
+        z-index: -1;
+       }
+       img{
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+       }
+    }
+    .content{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1{
+            font-size: 48px;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        button{
+            width: max-content;
+            background-color: rgb(199, 16, 62);
+            color: #fff;
+            padding: 10px 20px;
+            border-Radius:10px;
+            cursor: pointer;
+            border: 1px solid;
+
+            &:hover{
+                border: 1px solid white;
+                background-color: rgb(230, 5, 117);;
+                color: #000000;
+                transition: 1s;
+            }
+
+    }
+}
+      }
+}
+
+   //SINGLE PAGE
+   .single{
+    display: flex;
+    gap: 50px;
+
+     .content{
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        img{
+            width: 70%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+            
+            img{
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+               object-fit: cover; 
+            }
+            span{
+                font-weight: bold;
+            }
+        }
+        .edit{
+            display: flex;
+            gap: 20px;
+            img{
+                width: 38px;
+                height: 35px;
+                cursor: pointer;
+                
+            }
+        }
+        h1{
+            font-size: 42px;
+            color: #000000;
+        }
+        p{
+            text-align: justify;
+            line-height: 30px;
+        }
+     }
+     .menu{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1{
+            font-size: 28px;
+            color: #000000;
+        }
+        .post{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        img{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        h2{
+            color: #000000;
+        }
+        button{
+            width: max-content;
+            background-color: rgb(199, 16, 62) 0 10px 20px -10px;
+            color: #fff;
+            padding: 7.5px 15px;
+            border-Radius:10px;
+            cursor: pointer;
+            border: 1px solid;
+
+            &:hover{
+                border: 1px solid white;
+                background-color: rgb(199, 16, 62) 0 10px 20px -10px;
+                color: #000000;
+                transition: 1s;
+            }}  
+     }
+   }
+   ///WRITE 
+   .add {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+  }
+       .content{
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input{
+            padding: 10px;
+            border: 1px solid lightgray;
+        }
+
+        .editor{
+           height: 390px;
+           overflow: scroll;
+           border: 2px solid lightgray;
+
+           .editorcon{
+            height: 390px;
+            border: 2px solid lightgray;
+           }
+        }
+    }
+        .menu{
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        .item{
+           border: 2px solid lightgray;
+           padding: 10px;
+           flex: 1;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           font-size: 12px;
+           color: #0a0a0a;
+                
+         h1{
+          font-size: 25px;
+         }
+
+         .file{
+             text-decoration: underline;  
+            cursor: pointer;
+                }
+
+         .buttons{
+             display: flex;
+             justify-content: space-between;
+
+         :first-child{
+              cursor: pointer;
+              background: rgb(199, 16, 62);
+                border-radius: 999px;
+                box-shadow: rgb(199, 16, 62) 0 10px 20px -10px;
+                box-sizing: border-box;
+                color: #FFFFFF;
+                font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+                font-size: 13px;
+                font-weight: 70;
+                line-height: 20px;
+                opacity: 1;
+                outline: 0 solid transparent;
+                padding: 3px 5px;
+                width: fit-content;
+                border: 0;
+                    }
+        :last-child{
+            cursor: pointer;
+            background: rgb(199, 16, 62);
+              border-radius: 999px;
+              box-shadow: rgb(199, 16, 62) 0 10px 20px -10px;
+              box-sizing: border-box;
+              color: #FFFFFF;
+              font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+              font-size: 13px;
+              font-weight: 70;
+              line-height: 20px;
+              opacity: 1;
+              outline: 0 solid transparent;
+              padding: 5px 20px;
+              width: fit-content;
+              border: 0;
+                    }
+                }
+
+        .cat{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #000000;
+        }
+            }
+        
+         
+   }
+}}
